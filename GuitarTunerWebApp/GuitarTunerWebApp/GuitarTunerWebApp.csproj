@@ -110,6 +110,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Working with audio.aspx" />
     <None Include="Properties\PublishProfiles\tuner.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Working with audio.aspx.cs">
+      <DependentUpon>Working with audio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Working with audio.aspx.designer.cs">
+      <DependentUpon>Working with audio.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

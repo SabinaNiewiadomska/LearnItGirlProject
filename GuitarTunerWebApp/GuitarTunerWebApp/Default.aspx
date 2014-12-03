@@ -15,7 +15,25 @@
           <asp:Button ID="ButtonOpenWaveFile" runat="server" Text="Open Wave File" OnClick="ButtonOpenWaveFile_Click" /><br />
         <asp:Button ID="ButtonPlayPause" runat="server" Text="Play/Pause" OnClick="ButtonPlayPause_Click" Width="227px" />
 
-        <p>&nbsp;</p>
+        <br />
+
+        <p>
+            <asp:Label ID="Label3" runat="server" Text="Check you microphone!"></asp:Label>
+        </p>
+        <p>
+            <asp:Button ID="Button2_mic" runat="server" OnClick="Button2_mic_Click" Text="Check name of using device" />
+            <asp:TextBox ID="TextBox1" runat="server" Height="174px" OnTextChanged="TextBox1_TextChanged" Width="415px"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Label ID="Label4_microphone" runat="server" Text="no microfone checked"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label4" runat="server" Text="Check the volumne level of your device"></asp:Label>
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Check" />
+        </p>
+        <p>Record wavefile
+            <asp:Button ID="Button3_record" runat="server" Height="43px" OnClick="Button3_record_Click" Text="Record" />
+        </p>
     </div>
 
 </asp:Content>
