@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.1.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Elmah">
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
@@ -67,9 +71,6 @@
     </Reference>
     <Reference Include="AspNet.ScriptManager.bootstrap">
       <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
-    </Reference>
-    <Reference Include="AspNet.ScriptManager.jQuery">
-      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ScriptManager.MSAjax">
       <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
@@ -106,7 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="AudioRecorder.js" />
     <Content Include="Convert.aspx" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\.gitignore" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\img\mic.svg" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\img\mic128.png" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\img\save.svg" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\index.html" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\js\audiodisplay.js" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\js\main.js" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\js\recorderjs\recorder.js" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\js\recorderjs\recorderWorker.js" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\LICENSE.txt" />
     <Content Include="PlayingButtons.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -116,12 +128,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="JavaScript\AudioRecorderJavaScript\AudioRecorder-master\README.md" />
     <None Include="Properties\PublishProfiles\WebbAppSound.pubxml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -155,8 +168,8 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
